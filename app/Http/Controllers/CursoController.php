@@ -35,7 +35,7 @@ class CursoController extends Controller
         $curso->save();
 
         // Redireciona para uma página de sucesso ou de lista de cursos
-        return redirect()->route('criar_curso')->with('success', 'Curso criado com sucesso!');
+        return redirect()->route('meus_cursos')->with('success', 'Curso criado com sucesso!');
     }
     public function show($id)
     {
